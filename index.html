@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="keywords" content="mannequin, portfolio, fashion, photography, modeling agency">
   <meta name="description" content="Welcome to the portfolio of Guillaume Predhomme, Beginner Model">
@@ -12,6 +12,133 @@
   <link rel="stylesheet" href="CSS portfolio.css">
   <script src="Javascript1.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Ajout de styles pour rendre le site responsive */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar .menu-btn {
+      display: none;
+    }
+
+    .navbar .menu li {
+      margin: 0 10px;
+    }
+
+    .navbar .menu li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .scroll-up-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar .menu-btn {
+        display: block;
+        cursor: pointer;
+      }
+
+      .navbar .menu.show {
+        display: flex;
+      }
+    }
+
+    .home .home-content .text-1,
+    .home .home-content .text-2,
+    .home .home-content .text-3 {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .home .home-content .text-3 span {
+      display: block;
+      margin-top: 10px;
+      font-size: 1.5em;
+    }
+
+    .about .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about .about-content .column {
+      flex: 1;
+      margin: 10px 0;
+    }
+
+    .about .about-content .column img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .services .serv-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services .serv-content .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .contact .contact-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact .contact-content .column {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .contact .contact-content .column form .field {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .contact .contact-content .column form .btn {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -52,7 +179,7 @@
         </div>
         <div class="column right">
           <div class="text">I am Guillaume Predhomme <span class="typing-2"></span></div>
-          <p>I am a Beginner Model passionate about the fashion and photography industry. Though I don't have professional experience yet, I have done several professional photo shoots to develop my skills and unique style.</p>
+          <p>I am a Beginner Model passionate about the fashion and photography industry. I have done several professional photo shoots to develop my skills and unique style.</p>
           <br>
           <div class="text">Why Work With Me?</div>
           <p>I am determined to succeed in the modeling world and I'm ready to take on any challenges. My enthusiasm, creativity, and dedication make me an ideal candidate to collaborate on various fashion and photography projects.</p>
@@ -107,7 +234,6 @@
           <div class="text">Contact Me</div>
           <p>Feel free to contact me to discuss collaborations, artistic projects, or any other inquiries. I'm always open to new opportunities.</p>
           <div class="icons">
-            
             <div class="row">
               <i class="fas fa-envelope"></i>
               <div class="info">
@@ -137,6 +263,15 @@
     </div>
   </section>
 
+  <script>
+    // JavaScript to toggle the menu on small screens
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
 </body>
 
 </html>
