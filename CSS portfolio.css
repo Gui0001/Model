@@ -327,11 +327,11 @@
     background: #1e3551;
     color: #fff;
     font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
+    font-weight: 700;
+    padding: 25px 35px;
+    margin-top: 30px;
     border-radius: 6px;
-    border: 2px solid #1e3551;
+    border: 3px solid #1e3551;
     transition: all 0.3s ease;
   }
   
@@ -341,7 +341,51 @@
     animation: pulsate 1s ease-in-out;
   }
   
- 
+  .digitals {
+    padding: 20px;
+}
+
+.digitals .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    gap: 20px; /* Espacement entre les images */
+    padding: 20px;
+    justify-items: center;
+}
+
+.digitals .gallery img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Catégories spécifiques */
+.face-view img {
+    max-width: 300px; /* Largeur maximale pour les images Face View */
+    height: auto; /* Hauteur automatique en fonction de la largeur */
+}
+
+.profile-view img {
+    max-width: 350px; /* Largeur maximale pour les images Profile View */
+    height: auto; /* Hauteur automatique en fonction de la largeur */
+}
+
+.full-length {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste les colonnes automatiquement en fonction de la taille des images */
+}
+
+.full-length img {
+    width: 100%; /* Les images occupent toute la largeur de la colonne */
+    height: 700px; /* Hauteur automatique pour conserver les proportions */
+    max-height: 700px; /* Hauteur maximale pour éviter que les images soient trop grandes */
+    object-fit: contain; /* Ajuste les images pour qu'elles soient entièrement visibles */
+}
+
+.digitals .gallery img:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+
   
   .services,
   .projects {
