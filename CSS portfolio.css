@@ -370,9 +370,7 @@
     height: auto; /* Hauteur automatique en fonction de la largeur */
 }
 
-.full-length {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste les colonnes automatiquement en fonction de la taille des images */
-}
+
 
 .full-length img {
     width: 100%; /* Les images occupent toute la largeur de la colonne */
