@@ -1,92 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="keywords" content="mannequin, portfolio, fashion, photography, modeling agency">
-    <meta name="description" content="Welcome to the portfolio of Guillaume Predhomme, Model">
+    <meta name="keywords"
+          content="mannequin, portfolio, fashion, photography, modeling agency">
+    <meta name="description"
+          content="Portfolio professionnel de Guillaume Predhomme, mannequin basé à Paris.">
     <meta name="author" content="Predhomme Guillaume">
     <title>Guillaume Predhomme | Model</title>
+
+    <!-- Google Fonts pour un rendu plus éditorial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Feuille de style principale -->
     <link rel="stylesheet" href="CSS portfolio.css">
-    <script src="Javascript1.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        .digitals {
-            padding: 20px;
-        }
 
-        .digitals .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
-            gap: 20px; /* Espacement entre les images */
-            padding: 20px;
-            justify-items: center;
-        }
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-        .digitals .gallery img {
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease-in-out;
-            object-fit: cover;
-        }
-
-        .digitals .gallery img:hover {
-            transform: scale(1.05); /* Agrandissement au survol */
-        }
-
-        /* Tailles spécifiques pour chaque catégorie */
-        .face-view img:nth-child(1) {
-            width: 350px;
-            height: 450px;
-        }
-
-        .face-view img:nth-child(2) {
-            width: 300px;
-            height: 400px;
-        }
-
-        .face-view img:nth-child(3) {
-            width: 320px;
-            height: 420px;
-        }
-
-        .profile-view img:nth-child(1) {
-            width: 340px;
-            height: 430px;
-        }
-
-        .profile-view img:nth-child(2) {
-            width: 330px;
-            height: 410px;
-        }
-
-        .profile-view img:nth-child(3) {
-            width: 310px;
-            height: 390px;
-        }
-
-        .full-length {
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste les colonnes automatiquement */
-        }
-
-        .full-length img {
-            width: 100%; /* Les images occupent toute la largeur de la colonne */
-            height: auto; /* Hauteur automatique pour conserver les proportions */
-            max-height: 1000px; /* Hauteur maximale pour éviter que les images soient trop grandes */
-            object-fit: contain; /* Ajuste les images pour qu'elles soient entièrement visibles */
-        }
-    </style>
+    <!-- JavaScript principal -->
+    <script src="Javascript1.js" defer></script>
 </head>
 
 <body>
+    <!-- Bouton retour en haut -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
 
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="max-width">
+        <div class="max-width nav-inner">
+            <div class="logo">
+                <span class="logo-main">Guillaume</span>
+                <span class="logo-sub">Predhomme</span>
+            </div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
                 <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
@@ -94,105 +51,183 @@
                 <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li>
                 <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
             </ul>
-            <div class="menu-btn">
+            <div class="menu-btn burger">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
+    <!-- SECTION HOME / HERO -->
     <section class="home" id="home">
+        <div class="overlay"></div>
         <div class="max-width">
             <div class="home-content">
+                <div class="text-1">Model · Paris</div>
                 <div class="text-2">Guillaume Predhomme</div>
-                <div class="text-3"> Model <span class="typing"></span></div>
+                <div class="text-3">Éditorial · Campagne · Digital</div>
+                <a href="#contact" class="btn hero-btn">Booking et contact</a>
             </div>
         </div>
     </section>
 
+    <!-- SECTION ABOUT -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About Me</h2>
+            <h2 class="title">À propos</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="photo155.jpg" alt="photo01">
+                    <div class="about-photo-frame">
+                        <!-- Photo héro principale (portrait éditorial) -->
+                        <img src="Photo162.1.JPG" alt="Portrait de Guillaume Predhomme">
+                    </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Who am I ?<span class="typing-2"></span></div>
-                    <p>A model passionate about the fashion and photography industry. I have participated in numerous professional photo shoots, allowing me to refine my skills and develop a distinctive style, which I am always eager to improve and evolve further.</p>
-                    <br>
-                    <div class="text">Why should you work with me?</div>
-                    <p>I am determined to succeed in the modeling world and ready to take on any challenges. My enthusiasm, creativity, and dedication make me an ideal candidate to collaborate on various fashion and photography projects.</p>
-                    <br>
-                    <div class="text">My Style</div>
-                    <p>I am versatile and capable of adopting a wide variety of styles, from classic elegance to avant-garde. I enjoy exploring new ideas and I'm open to collaborate and create unique and captivating images.</p>
-                    <a href="photos.html" target="_blank">View My Photos Here</a>
+                    <div class="text">Qui suis-je ?</div>
+                    <p>
+                        Mannequin basé à Paris, habitué aux environnements luxe et aux univers
+                        créatifs exigeants. Présence calme, regard fort, gestuelle précise. Mon
+                        objectif est de proposer une image versatile, capable de passer du
+                        registre éditorial à des campagnes plus commerciales, tout en conservant
+                        une identité visuelle marquée.
+                    </p>
+                    <div class="text section-subtitle">Profil technique</div>
+                    <ul class="about-list">
+                        <li>Taille&nbsp;: 1m71</li>
+                        <li>Poids&nbsp;: 68 kg</li>
+                        <li>Cheveux&nbsp;: châtain bouclé</li>
+                        <li>Yeux&nbsp;: hazel</li>
+                        <li>Chaussures&nbsp;: 43 EU</li>
+                        <li>Basé à&nbsp;: Paris, France</li>
+                    </ul>
+                    <div class="text section-subtitle">Pourquoi travailler avec moi ?</div>
+                    <p>
+                        Sérieux sur les projets, à l’aise devant la caméra, capable de suivre une
+                        direction artistique précise tout en apportant une vraie personnalité à
+                        chaque image. Disponible pour tests, éditos, lookbooks, campagnes et
+                        contenu digital haut de gamme.
+                    </p>
+                    <a href="photos.html" target="_blank" class="btn about-btn">Voir plus de photos</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SECTION DIGITALS -->
     <section class="digitals" id="digitals">
         <div class="max-width">
-            <h2 class="title">My Digitals Photos</h2>
+            <h2 class="title">Digitals</h2>
+            <p class="digitals-intro">
+                Polaroids récents en lumière naturelleVue globale du
+                visage, du profil et de la silhouette pour un usage agence.
+            </p>
 
-            <!-- Face View Category -->
-            <h3>Face View</h3>
-            <div class="gallery face-view">
-                <img src="photo101.11-_1_.jpg" alt="Face View Photo 1">
-                <img src="photo113.jpg" alt="Face View Photo 1">
-                <img src="photo114.jpg" alt="Face View Photo 1">
+            <div class="digitals-groups">
+                <!-- Face View (2 photos) -->
+                <div class="digitals-group">
+                    <h3>Face view</h3>
+                    <div class="gallery face-view">
+                        <!-- Face view 1 : gros plan visage de face, regard caméra, expression neutre -->
+                        <img src="_DSC6647.jpg" alt="Face view 1">
+                        <!-- Face view 2 : visage de face, léger changement d’expression -->
+                        <img src="_DSC6734.jpg" alt="Face view 2">
+                        <!-- Si tu veux une 3e plus tard, tu pourras rajouter :
+                        <img src="NOM_FICHIER_3.jpg" alt="Face view 3">
+                        -->
+                    </div>
+                </div>
 
+                <!-- Profile View (prévu 2 photos, pas encore mises) -->
+                <div class="digitals-group">
+                    <h3>Profile view</h3>
+                    <div class="gallery profile-view">
+                        <img src="_DSC6744.jpg" alt="Profile view 1">
+                        <img src="_DSC6745.jpg" alt="Profile view 2">
+                    </div>
+                </div>
+
+                <!-- Full Length (3 photos) -->
+                <div class="digitals-group">
+                    <h3>Full length</h3>
+                    <div class="gallery full-length">
+                        <!-- Full length 1 : plein pied de face -->
+                        <img src="_DSC6619.jpg" alt="Full length 1">
+                        <!-- Full length 2 : plein pied trois quarts ou léger mouvement -->
+                        <img src="_DSC6729.jpg" alt="Full length 2">
+                        <!-- Full length 3 : plein pied profil -->
+                        <img src="profilvalide.jpg" alt="Full length 3">
+                    </div>
+                </div>
+
+                <!-- 3 Quarts (2 photos) -->
+                <div class="digitals-group">
+                    <h3>3 quarts</h3>
+                    <div class="gallery three-quarters">
+                        <!-- 3/4 1 : visage/haut du buste en 3/4 -->
+                        <img src="_DSC6743.jpg" alt="3 quarts 1">
+                        <!-- 3/4 2 : cadrage un peu plus large en 3/4 -->
+                        <img src="_DSC6609.jpg" alt="3 quarts 2">
+                        <!-- Pour une 3e plus tard :
+                        <img src="NOM_FICHIER_3Q_3.jpg" alt="3 quarts 3">
+                        -->
+                    </div>
+                </div>
+
+                <!-- Plan Américain (2 photos) -->
+                <div class="digitals-group">
+                    <h3>Plan américain</h3>
+                    <div class="gallery plan-americain">
+                        <!-- Plan américain 1 : des cuisses (milieu) jusqu’au-dessus de la tête, de face -->
+                        <img src="_DSC6724.jpg" alt="Plan américain 1">
+                        <!-- Plan américain 2 : même cadrage, en 3/4 -->
+                        <img src="_DSC6738.jpg" alt="Plan américain 2">
+                        <!-- Ancien emplacement 3 supprimé pour éviter un “trou” :
+                        <img src="..." alt="Plan américain 3">
+                        -->
+                    </div>
+                </div>
             </div>
 
-            <!-- Profile View Category -->
-            <h3>Profile View</h3>
-            <div class="gallery profile-view">
-                <img src="photo101.jpg" alt="Profile View Photo 1">
-                <img src="photo102.jpg" alt="Profile View Photo 2">
-                <img src="photo104.jpg" alt="Profile View Photo 3">
-                <img src="photo108.11.jpg" alt="Profile View Photo 4">
-                <img src="photo109.jpg" alt="Profile View Photo 5">
-            </div>
-
-            <!-- Full Length Category -->
-            <h3>Full Length</h3>
-            <div class="gallery full-length">
-                <img src="photo103.jpg" alt="Full Length Photo 1">
-                <img src="photo115.jpg" alt="Full Length Photo 2">
-                <img src="photo105.1111.jpg" alt="Full Length Photo 2">
-                <img src="photo107.jpg" alt="Full Length Photo 3">
-                <img src="photo110.jpg" alt="Full Length Photo 4">
+            <div class="digitals-note">
+                Digitals complets et séries supplémentaires disponibles sur demande
+                ou dans la galerie détaillée.
             </div>
         </div>
     </section>
 
+    <!-- SECTION SERVICES -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My Services</h2>
+            <h2 class="title">Types de projets</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-camera"></i>
-                        <div class="text">Photo Shoots</div>
-                        <p>I am available for photo sessions in-studio or outdoors. My ability to express a range of emotions and poses makes me an ideal choice for your photography needs.</p>
+                        <div class="text">Éditorial mode</div>
+                        <p>
+                            Séries éditoriales, magazines, univers visuels forts et lumière
+                            travaillée. Attitude posée, storytelling visuel et lignes marquées.
+                        </p>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-info-circle"></i>
-                        <div class="text">My Information</div>
+                        <div class="text">Campagnes et lookbooks</div>
                         <p>
-                            Ethnicity: White/Caucasian<br>
-                            Hair: Light Brown<br>
-                            Eye: Light Brown<br>
-                            Height: 172cm / 5'8"<br>
-                            Shoes: 43 EU, 9 UK, 9 US<br>
-                            Chest: 104cm / 40.9"<br>
-                            Waist: 79cm / 31.1"<br>
-                            Hips: 90cm / 35.4"<br>
-                            Jacket: 42 EU, 34 UK, 28 US<br>
-                            Trousers: 42 EU, 42 UK, 32 US<br>
-                            Collar: 37cm / 15"
+                            Collections, prêt-à-porter, tailoring, costume. Image propre,
+                            utilisable en print, web et réseaux sociaux.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="text">Contenu digital</div>
+                        <p>
+                            Création de contenu pour Instagram, TikTok, e-commerce et campagnes
+                            social media avec une direction artistique précise.
                         </p>
                     </div>
                 </div>
@@ -200,42 +235,75 @@
         </div>
     </section>
 
+    <!-- SECTION CONTACT -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact Me</h2>
+            <h2 class="title">Contact</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Contact Me</div>
-                    <p>Feel free to contact me to discuss collaborations, artistic projects, or any other inquiries. I'm always open to new opportunities.</p>
+                    <div class="text">Booking et agences</div>
+                    <p>
+                        Pour les agences, directeurs de casting et productions.  
+                        Merci de préciser le type de projet, les dates, le lieu et les
+                        références éventuelles.
+                    </p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title"><a href="mailto:guillaumepredhomme@gmail.com" style="text-decoration: none; color: #333;">guillaumepredhomme@gmail.com</a></div>
+                                <div class="sub-title">
+                                    <a href="mailto:guillaumepredhomme@gmail.com">
+                                        guillaumepredhomme@gmail.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fab fa-instagram"></i>
                             <div class="info">
                                 <div class="head">Instagram</div>
-                                <div class="sub-title"><a href="https://www.instagram.com/gui.prdhm/" target="_blank" style="text-decoration: none; color: #333;">@gui.prdhm</a></div>
+                                <div class="sub-title">
+                                    <a href="https://instagram.com/gui.prdhm" target="_blank">
+                                        @gui.prdhm
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Basé à</div>
+                                <div class="sub-title">Paris, France</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="column right">
-                    <div class="text">Send Me a Message</div>
-                    <form id="contact-form" action="mailto:guillaumepredhomme@gmail.com" method="POST" enctype="multipart/form-data">
-                        <input type="text" name="name" class="field" placeholder="Your Name" required>
-                        <input type="email" name="email" class="field" placeholder="Your Email Address" required>
-                        <textarea name="message" class="field" placeholder="Your Message" required></textarea>
-                        <input type="submit" value="Send" class="btn">
+                    <div class="text">Envoyer un message</div>
+                    <form id="contact-form"
+                          action="mailto:guillaumepredhomme@gmail.com"
+                          method="POST" enctype="text/plain">
+                        <input type="text" name="name" class="field"
+                               placeholder="Votre nom" required>
+                        <input type="email" name="email" class="field"
+                               placeholder="Votre email" required>
+                        <textarea name="message" class="field"
+                                  placeholder="Votre message" required></textarea>
+                        <input type="submit" value="Envoyer" class="btn">
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="max-width footer-inner">
+            <span>© <span id="year"></span> Guillaume Predhomme</span>
+            <span>Portfolio mannequin · usage professionnel</span>
+        </div>
+    </footer>
 </body>
 
 </html>
