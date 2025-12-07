@@ -2,124 +2,170 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>My Photo Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0; 
-            margin: 0;
-            padding: 20px;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
-            gap: 10px; /* Espacement réduit entre les images */
-            padding: 20px;
-            justify-items: center;
-        }
-        .gallery img {
-            width: calc((350% / 3) - 150px); /* Largeur dynamique pour trois images par colonne avec un espacement de 10px */
-            max-width: 150%; /* Utilisation de la largeur maximale de la grille */
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease-in-out;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
-        }
-    </style>
+    <title>Galerie photos · Guillaume Predhomme</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords"
+          content="mannequin, portfolio, fashion, photography, modeling agency, gallery">
+    <meta name="description"
+          content="Galerie photo de Guillaume Predhomme, mannequin basé à Paris.">
+    <meta name="author" content="Predhomme Guillaume">
+
+    <!-- Google Fonts (mêmes que l’index) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS global commun (index + photos) -->
+    <link rel="stylesheet" href="CSS portfolio.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- JavaScript (même fichier que pour index) -->
+    <script src="Javascript1.js" defer></script>
 </head>
-<body>
-    <h1>My Photo Gallery</h1>
-    <div class="gallery">
 
-        <img src="photo159.jpg" alt="Photo 01">
-        <img src="photo160.jpg" alt="Photo 01">
-
-
-        <img src="photo161.jpg" alt="Photo 01">
-        <img src="photo156.jpg" alt="Photo 01">
-        <img src="photo157.jpg" alt="Photo 01">
-        <img src="photo158.jpg" alt="Photo 01">
-
-        <img src="photo155.1.jpg" alt="Photo 01">
-
-        <img src="155.png" alt="Photo 01">
-        <img src="photo149.png" alt="Photo 01">
-        <img src="photo150.png" alt="Photo 01">
-        <img src="photo151.png" alt="Photo 01">
-        <img src="photo152.png" alt="Photo 01">
-        <img src="photo153.png" alt="Photo 01">
-        <img src="photo154.png" alt="Photo 01">
-        <img src="photo13.jpg" alt="Photo 01">
-        <img src="photo14.jpg" alt="Photo 01">
-        <img src="photo15.jpg" alt="Photo 01">
-        <img src="photo01.jpg" alt="Photo 01">
-        <img src="photo02.jpg" alt="Photo 02">
-        <img src="photo03.jpg" alt="Photo 03">
-        <img src="Photo144.jpg" alt="Photo 4">
-        <img src="Photo145.jpg" alt="Photo 4">
-        <img src="Photo146.jpg" alt="Photo 4">
-        <img src="Photo147.jpg" alt="Photo 4">
-        <img src="Photo148.jpg" alt="Photo 4">
-        <img src="160.png" alt="Photo 160">
-        <img src="161.png" alt="Photo 161">
-        <img src="162.png" alt="Photo 162">
-        <img src="163.png" alt="Photo 163">
-        <img src="164.png" alt="Photo 164">
-        <img src="165.png" alt="Photo 165">
-        <img src="166.png" alt="Photo 166">
-        <img src="167.png" alt="Photo 167">
-        <img src="168.png" alt="Photo 168">
-        <img src="169.png" alt="Photo 169">
-        <img src="photo17.jpg" alt="Photo 04">
-        <img src="photo116.jpg" alt="Photo 9">
-        <img src="photo117.jpg" alt="Photo 9">
-        <img src="photo118.jpg" alt="Photo 9">
-        <img src="photo1.jpg" alt="Photo 1">
-        <img src="photo3.jpg" alt="Photo 3">
-        <img src="photo12.1.jpg" alt="Photo 12.1">
-        <img src="photo5.jpeg" alt="Photo 5">
-        <img src="photo10.jpeg" alt="Photo 10">
-        <img src="photo6.jpeg" alt="Photo 6">
-        <img src="photo11.jpeg" alt="Photo 11">
-        <img src="photo7.jpeg" alt="Photo 7">
-        <img src="Photo4.jpeg" alt="Photo 4">
-        <img src="Photo120.jpg" alt="Photo 4">
-        <img src="Photo121.jpg" alt="Photo 4">
-        <img src="Photo142.jpg" alt="Photo 4">
-        <img src="Photo143.jpg" alt="Photo 4">
-        <img src="Photo123.jpg" alt="Photo 4">
-        <img src="Photo124.jpg" alt="Photo 4">
-        <img src="Photo125.jpg" alt="Photo 4">
-        <img src="Photo127.jpeg" alt="Photo 4">
-        <img src="Photo128.jpeg" alt="Photo 4">
-        <img src="Photo129.jpeg" alt="Photo 4">
-        <img src="Photo130.jpeg" alt="Photo 4">
-        <img src="Photo131.jpeg" alt="Photo 4">
-        <img src="Photo132.jpg" alt="Photo 4">
-        <img src="Photo133.jpeg" alt="Photo 4">
-        <img src="Photo135.jpeg" alt="Photo 4">
-        <img src="Photo136.jpg" alt="Photo 4">
-        <img src="171.jpg" alt="Photo 4">
-        <img src="172.jpg" alt="Photo 4">
-        <img src="170.JPG" alt="Photo 170">
-        <img src="Photo122.jpg" alt="Photo 4">
-        <img src="Photo126.jpg" alt="Photo 4">
-
-
-
-
-
-
-
+<body class="photos-page">
+    <!-- Bouton retour en haut -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
+
+    <!-- NAVBAR (cohérente avec l’index) -->
+    <nav class="navbar">
+        <div class="max-width nav-inner">
+            <div class="logo">
+                <span class="logo-main">Guillaume</span>
+                <span class="logo-sub">Predhomme</span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html#home" class="menu-btn"><strong>Home</strong></a></li>
+                <li><a href="index.html#about" class="menu-btn"><strong>About</strong></a></li>
+                <li><a href="index.html#digitals" class="menu-btn"><strong>Digitals</strong></a></li>
+                <li><a href="index.html#services" class="menu-btn"><strong>Services</strong></a></li>
+                <li><a href="index.html#contact" class="menu-btn"><strong>Contact</strong></a></li>
+                <li><a href="#photos" class="menu-btn"><strong>Photos</strong></a></li>
+            </ul>
+            <div class="menu-btn burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="photos-main">
+        <section class="photos-section" id="photos">
+            <div class="max-width">
+                <header class="photos-header">
+                    <h1 class="title">Galerie photos</h1>
+                    <p class="photos-intro">
+                        Sélection de photos éditoriales, tests, portraits et séries personnelles.
+                        Cette galerie permet d’avoir un aperçu plus large de mon univers visuel et de ma versatilité devant la caméra.
+                    </p>
+                </header>
+
+                <!--
+                    IMPORTANT :
+                    La grille ci-dessous utilise la classe "gallery photos-gallery".
+                    Tu peux juste remplacer les src="..." par tes nouveaux fichiers.
+
+                    Pour t’y retrouver :
+                    - Série 1 : par exemple shooting récent / mood principal
+                    - Série 2 : autre ambiance (rooftop, studio, noir & blanc, etc.)
+                    - Tu peux réorganiser l’ordre des photos par série.
+                -->
+
+                <div class="gallery photos-gallery">
+
+                    <!-- SÉRIE 1 — Ex : Série forte / récente (tu peux adapter) -->
+                    <!-- Plan plutôt serré / portrait mode -->
+
+
+                    <img src="_DSC6941.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6945.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6932.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6930.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6919.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6876.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6878.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6764.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6781.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6787.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6754.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6751.jpg" alt="Série 1 - Photo 2">
+                    <img src="_DSC6753.jpg" alt="Série 1 - Photo 2">
+
+                        <img src="photo160.jpg" alt="Série 1 - Photo 1">
+                    <!-- Portrait ou plan américain de la même série -->
+
+
+
+                    <img src="photo157.jpg" alt="Série 1 - Photo 3">
+                    <img src="photo158.jpg" alt="Série 1 - Photo 4">
+                     <img src="photo17.jpg" alt="Série 5 - Photo 1">
+                    <img src="Photo122.jpg" alt="Série 7 - Photo 3">
+                    <img src="Photo126.jpg" alt="Série 7 - Photo 4">
+
+
+                    
+
+                    
+
+
+            
+
+
+
+
+
+                    <!-- SÉRIE 2 — Portraits et gros plans -->
+                    <!-- Portrait éditorial / gros plan visage -->
+                    <img src="photo155.1.jpg" alt="Série 2 - Portrait 1">
+                    <img src="Photo120.jpg" alt="Série 6 - Photo 1">
+                    <img src="Photo121.jpg" alt="Série 6 - Photo 2">
+                    <!-- Variation du même set (format PNG) -->
+                   
+
+                    <!-- SÉRIE 3 — Looks plus casual / extérieur -->
+                    <img src="photo13.jpg" alt="Série 3 - Photo 1">
+                    <img src="photo01.jpg" alt="Série 3 - Photo 3">
+
+                    <!-- SÉRIE 4 — Série en PNG (peut-être autre shoot) -->
+                    <img src="163.png" alt="Série 4 - Photo 1">
+                    <img src="167.png" alt="Série 4 - Photo 3">
+                    <img src="168.png" alt="Série 4 - Photo 4">
+
+                    <!-- SÉRIE 5 — Portraits / ambiance plus posée -->
+                    <img src="photo12.1.jpg" alt="Série 5 - Photo 3">
+
+                    <!-- SÉRIE 6 — Série type lifestyle / réseaux sociaux -->
+
+
+                    <!-- SÉRIE 7 — Derniers clichés ou favoris -->
+                    <img src="172.jpg" alt="Série 7 - Photo 2">
+
+
+                    <!--
+                        Tu peux :
+                        - supprimer des images que tu ne veux plus,
+                        - en ajouter d’autres en copiant la structure :
+                          <img src="nom-de-ton-fichier.jpg" alt="Série X - Photo Y">
+                        - réorganiser les séries selon l’importance de chaque shooting.
+                    -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="max-width footer-inner">
+            <span>© <span id="year"></span> Guillaume Predhomme</span>
+            <span>Portfolio mannequin · usage professionnel</span>
+        </div>
+    </footer>
 </body>
 </html>
