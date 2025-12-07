@@ -1,48 +1,70 @@
-// Récupérer le formulaire
-const form = document.getElementById('contact-form');
+// Javascript1.js
 
-// Écouter l'événement de soumission du formulaire
-form.addEventListener('submit', (e) => {
-  // Empêcher le comportement par défaut du formulaire
-  e.preventDefault();
+// =========================
+// Bouton "scroll-up"
+// =========================
+const scrollUpBtn = document.querySelector(".scroll-up-btn");
 
-  // Récupérer les valeurs des champs
-  const name = form.elements['name'].value;
-  const email = form.elements['email'].value;
-  const subject = form.elements['subject'].value;
-  const message = form.elements['message'].value;
-
-  // Valider les champs (vous pouvez ajouter des validations supplémentaires ici)
-  if (name === '' || email === '' || subject === '' || message === '') {
-    alert('Veuillez remplir tous les champs du formulaire.');
-    return;
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    scrollUpBtn.classList.add("show");
+  } else {
+    scrollUpBtn.classList.remove("show");
   }
+});
 
-  // Envoyer les données à votre serveur (vous devrez implémenter cette partie)
-  // Utilisez la méthode fetch() ou une bibliothèque AJAX pour envoyer les données
-  // à votre serveur de traitement de formulaires
-  // Exemple avec fetch() :
-  fetch('https://votre-serveur.com/votre-endpoint', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name,
-      email,
-      subject,
-      message,
-    }),
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert('Votre message a été envoyé avec succès.');
-        form.reset();
-      } else {
-        throw new Error('Une erreur s\'est produite lors de l\'envoi du message.');
-      }
-    })
-    .catch((error) => {
-      alert(error.message);
+if (scrollUpBtn) {
+  scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
+  });
+}
+
+// =========================
+// Menu burger (mobile)
+// =========================
+const menuBtn = document.querySelector(".menu-btn.burger");
+const menu = document.querySelector(".navbar .menu");
+
+if (menuBtn && menu) {
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
+  });
+}
+
+// =========================
+// Année automatique dans le footer
+// =========================
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
+
+// =========================
+// Scroll doux sur les liens internes
+// =========================
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const targetId = this.getAttribute("href").slice(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      e.preventDefault();
+      const offsetTop = target.getBoundingClientRect().top + window.scrollY - 80;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
 });
