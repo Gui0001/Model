@@ -45,12 +45,50 @@
                 <span class="logo-sub">Predhomme</span>
             </div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
-                <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-                <li><a href="#digitals" class="menu-btn"><strong>Digitals</strong></a></li>
-                <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li>
-                <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
+                <li>
+                    <a href="#home" class="menu-btn"
+                       data-fr="Accueil"
+                       data-en="Home">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="menu-btn"
+                       data-fr="À propos"
+                       data-en="About">
+                        À propos
+                    </a>
+                </li>
+                <li>
+                    <a href="#digitals" class="menu-btn"
+                       data-fr="Digitals"
+                       data-en="Digitals">
+                        Digitals
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" class="menu-btn"
+                       data-fr="Services"
+                       data-en="Services">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu-btn"
+                       data-fr="Contact"
+                       data-en="Contact">
+                        Contact
+                    </a>
+                </li>
             </ul>
+
+            <!-- Switch de langue -->
+            <div class="lang-switch">
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <span class="lang-separator">/</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+
             <div class="menu-btn burger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -62,10 +100,22 @@
         <div class="overlay"></div>
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Model · Paris</div>
+                <div class="text-1"
+                     data-fr="Model · Paris"
+                     data-en="Model · Paris">
+                    Model · Paris
+                </div>
                 <div class="text-2">Guillaume Predhomme</div>
-                <div class="text-3">Éditorial · Campagne · Digital</div>
-                <a href="#contact" class="btn hero-btn">Booking et contact</a>
+                <div class="text-3"
+                     data-fr="Éditorial · Campagne · Digital"
+                     data-en="Editorial · Campaign · Digital">
+                    Éditorial · Campagne · Digital
+                </div>
+                <a href="#contact" class="btn hero-btn"
+                   data-fr="Booking et contact"
+                   data-en="Booking &amp; contact">
+                    Booking et contact
+                </a>
             </div>
         </div>
     </section>
@@ -73,40 +123,88 @@
     <!-- SECTION ABOUT -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">À propos</h2>
+            <h2 class="title"
+                data-fr="À propos"
+                data-en="About">
+                À propos
+            </h2>
             <div class="about-content">
                 <div class="column left">
                     <div class="about-photo-frame">
                         <!-- Photo héro principale (portrait éditorial) -->
-                        <img src="_DSC6751-2.JPG" alt="Portrait de Guillaume Predhomme">
+                        <img src="_DSC6751-2.jpg" alt="Portrait de Guillaume Predhomme">
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Qui suis-je ?</div>
-                    <p>
+                    <div class="text"
+                         data-fr="Qui suis-je ?"
+                         data-en="About me">
+                        Qui suis-je ?
+                    </div>
+                    <p
+                       data-fr="Mannequin basé à Paris, habitué aux environnements luxe et aux univers créatifs exigeants. Présence calme, regard fort, gestuelle précise. Mon objectif est de proposer une image versatile, capable de passer du registre éditorial à des campagnes plus commerciales, tout en conservant une identité visuelle marquée."
+                       data-en="Model based in Paris, used to luxury environments and demanding creative settings. Calm presence, strong gaze, precise body language. My goal is to offer a versatile image, able to move from editorial work to more commercial campaigns while keeping a strong visual identity.">
                         Mannequin basé à Paris, habitué aux environnements luxe et aux univers
                         créatifs exigeants. Présence calme, regard fort, gestuelle précise. Mon
                         objectif est de proposer une image versatile, capable de passer du
                         registre éditorial à des campagnes plus commerciales, tout en conservant
                         une identité visuelle marquée.
                     </p>
-                    <div class="text section-subtitle">Profil technique</div>
+                    <div class="text section-subtitle"
+                         data-fr="Profil technique"
+                         data-en="Measurements">
+                        Profil technique
+                    </div>
                     <ul class="about-list">
-                        <li>Taille&nbsp;: 1m71</li>
-                        <li>Poids&nbsp;: 68 kg</li>
-                        <li>Cheveux&nbsp;: châtain bouclé</li>
-                        <li>Yeux&nbsp;: hazel</li>
-                        <li>Chaussures&nbsp;: 43 EU</li>
-                        <li>Basé à&nbsp;: Paris, France</li>
+                        <li
+                            data-fr="Taille : 1m84"
+                            data-en="Height: 1m84">
+                            Taille&nbsp;: 1m84
+                        </li>
+                        <li
+                            data-fr="Poids : 74 kg"
+                            data-en="Weight: 74 kg">
+                            Poids&nbsp;: 74 kg
+                        </li>
+                        <li
+                            data-fr="Cheveux : châtain bouclé"
+                            data-en="Hair: curly light brown">
+                            Cheveux&nbsp;: châtain bouclé
+                        </li>
+                        <li
+                            data-fr="Yeux : noisette"
+                            data-en="Eyes: hazel">
+                            Yeux&nbsp;: noisette
+                        </li>
+                        <li
+                            data-fr="Chaussures : 43 EU"
+                            data-en="Shoes: 43 EU">
+                            Chaussures&nbsp;: 43 EU
+                        </li>
+                        <li
+                            data-fr="Basé à : Paris, France"
+                            data-en="Based in: Paris, France">
+                            Basé à&nbsp;: Paris, France
+                        </li>
                     </ul>
-                    <div class="text section-subtitle">Pourquoi travailler avec moi ?</div>
-                    <p>
+                    <div class="text section-subtitle"
+                         data-fr="Pourquoi travailler avec moi ?"
+                         data-en="Why work with me?">
+                        Pourquoi travailler avec moi ?
+                    </div>
+                    <p
+                       data-fr="Sérieux sur les projets, à l’aise devant la caméra, capable de suivre une direction artistique précise tout en apportant une vraie personnalité à chaque image. Disponible pour tests, éditos, lookbooks, campagnes et contenu digital haut de gamme."
+                       data-en="Professional on set, comfortable in front of the camera, able to follow a precise art direction while bringing real personality to each image. Available for tests, editorials, lookbooks, campaigns and high-end digital content.">
                         Sérieux sur les projets, à l’aise devant la caméra, capable de suivre une
                         direction artistique précise tout en apportant une vraie personnalité à
                         chaque image. Disponible pour tests, éditos, lookbooks, campagnes et
                         contenu digital haut de gamme.
                     </p>
-                    <a href="photos.html" target="_blank" class="btn about-btn">Voir plus de photos</a>
+                    <a href="photos.html" target="_blank" class="btn about-btn"
+                       data-fr="Voir plus de photos"
+                       data-en="See more photos">
+                        Voir plus de photos
+                    </a>
                 </div>
             </div>
         </div>
@@ -116,78 +214,95 @@
     <section class="digitals" id="digitals">
         <div class="max-width">
             <h2 class="title">Digitals</h2>
-            <p class="digitals-intro">
-                Polaroids récents en lumière naturelleVue globale du
+            <p class="digitals-intro"
+               data-fr="Polaroids récents en lumière naturelle, sans retouche lourde. Vue globale du visage, du profil et de la silhouette pour un usage agence."
+               data-en="Recent digitals in natural light, without heavy retouching. Clear view of face, profile and full body for agency use.">
+                Polaroids récents en lumière naturelle, sans retouche lourde. Vue globale du
                 visage, du profil et de la silhouette pour un usage agence.
             </p>
 
             <div class="digitals-groups">
-                <!-- Face View (2 photos) -->
+                <!-- Face View -->
                 <div class="digitals-group">
-                    <h3>Face view</h3>
+                    <h3
+                        data-fr="Face (portrait de face)"
+                        data-en="Face view">
+                        Face (portrait de face)
+                    </h3>
                     <div class="gallery face-view">
                         <!-- Face view 1 : gros plan visage de face, regard caméra, expression neutre -->
                         <img src="_DSC6647.jpg" alt="Face view 1">
-                        <!-- Face view 2 : visage de face, léger changement d’expression -->
+                        <!-- Face view 2 : visage de face, léger changement d’expression (sans trop de pose) -->
                         <img src="_DSC6734.jpg" alt="Face view 2">
-                        <!-- Si tu veux une 3e plus tard, tu pourras rajouter :
-                        <img src="NOM_FICHIER_3.jpg" alt="Face view 3">
-                        -->
                     </div>
                 </div>
 
-                <!-- Profile View (prévu 2 photos, pas encore mises) -->
+                <!-- Profile View -->
                 <div class="digitals-group">
-                    <h3>Profile view</h3>
+                    <h3
+                        data-fr="Profil"
+                        data-en="Profile view">
+                        Profil
+                    </h3>
                     <div class="gallery profile-view">
+                        <!-- Profile view 1 : profil pur (90°), visage entier, lumière naturelle -->
                         <img src="_DSC6744.jpg" alt="Profile view 1">
+                        <!-- Profile view 2 : profil pur, autre côté ou cadrage légèrement différent -->
                         <img src="_DSC6745.jpg" alt="Profile view 2">
                     </div>
                 </div>
 
-                <!-- Full Length (3 photos) -->
+                <!-- Full Length -->
                 <div class="digitals-group">
-                    <h3>Full length</h3>
+                    <h3
+                        data-fr="Plein pied"
+                        data-en="Full length">
+                        Plein pied
+                    </h3>
                     <div class="gallery full-length">
-                        <!-- Full length 1 : plein pied de face -->
+                        <!-- Full length 1 : plein pied de face (tête aux pieds, silhouette complète) -->
                         <img src="_DSC6619.jpg" alt="Full length 1">
                         <!-- Full length 2 : plein pied trois quarts ou léger mouvement -->
                         <img src="_DSC6729.jpg" alt="Full length 2">
-                        <!-- Full length 3 : plein pied profil -->
+                        <!-- Full length 3 : plein pied profil ou variante avec autre tenue -->
                         <img src="profilvalide.jpg" alt="Full length 3">
                     </div>
-                </div>
+                </div> 
 
-                <!-- 3 Quarts (2 photos) -->
+                <!-- 3 Quarts -->
                 <div class="digitals-group">
-                    <h3>3 quarts</h3>
+                    <h3
+                        data-fr="Trois quarts"
+                        data-en="Three-quarter view">
+                        Trois quarts
+                    </h3>
                     <div class="gallery three-quarters">
-                        <!-- 3/4 1 : visage/haut du buste en 3/4 -->
+                        <!-- 3/4 1 : cadrage visage/haut du buste en 3/4 (épaule vers caméra) -->
                         <img src="_DSC6743.jpg" alt="3 quarts 1">
-                        <!-- 3/4 2 : cadrage un peu plus large en 3/4 -->
+                        <!-- 3/4 2 : cadrage un peu plus large (buste) en 3/4 -->
                         <img src="_DSC6609.jpg" alt="3 quarts 2">
-                        <!-- Pour une 3e plus tard :
-                        <img src="NOM_FICHIER_3Q_3.jpg" alt="3 quarts 3">
-                        -->
                     </div>
                 </div>
 
-                <!-- Plan Américain (2 photos) -->
+                <!-- Plan Américain -->
                 <div class="digitals-group">
-                    <h3>Plan américain</h3>
+                    <h3
+                        data-fr="Plan américain"
+                        data-en="American shot">
+                        Plan américain
+                    </h3>
                     <div class="gallery plan-americain">
                         <!-- Plan américain 1 : des cuisses (milieu) jusqu’au-dessus de la tête, de face -->
                         <img src="_DSC6724.jpg" alt="Plan américain 1">
                         <!-- Plan américain 2 : même cadrage, en 3/4 -->
                         <img src="_DSC6738.jpg" alt="Plan américain 2">
-                        <!-- Ancien emplacement 3 supprimé pour éviter un “trou” :
-                        <img src="..." alt="Plan américain 3">
-                        -->
                     </div>
                 </div>
             </div>
 
-            <div class="digitals-note">
+            <div class="digitals-note"
+                 data-fr="Digitals complets et séries supplémentaires disponibles sur demande ou dans la galerie détaillée."
+                 data-en="Full digitals and additional series available on request or in the full gallery.">
                 Digitals complets et séries supplémentaires disponibles sur demande
                 ou dans la galerie détaillée.
             </div>
@@ -197,13 +312,23 @@
     <!-- SECTION SERVICES -->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">Types de projets</h2>
+            <h2 class="title"
+                data-fr="Types de projets"
+                data-en="Types of projects">
+                Types de projets
+            </h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-camera"></i>
-                        <div class="text">Éditorial mode</div>
-                        <p>
+                        <div class="text"
+                             data-fr="Éditorial mode"
+                             data-en="Fashion editorials">
+                            Éditorial mode
+                        </div>
+                        <p
+                           data-fr="Séries éditoriales, magazines, univers visuels forts et lumière travaillée. Attitude posée, storytelling visuel et lignes marquées."
+                           data-en="Editorial series, magazines, strong visual universes and crafted light. Composed attitude, visual storytelling and defined lines.">
                             Séries éditoriales, magazines, univers visuels forts et lumière
                             travaillée. Attitude posée, storytelling visuel et lignes marquées.
                         </p>
@@ -213,8 +338,14 @@
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-info-circle"></i>
-                        <div class="text">Campagnes et lookbooks</div>
-                        <p>
+                        <div class="text"
+                             data-fr="Campagnes et lookbooks"
+                             data-en="Campaigns &amp; lookbooks">
+                            Campagnes et lookbooks
+                        </div>
+                        <p
+                           data-fr="Collections, prêt-à-porter, tailoring, costume. Image propre, utilisable en print, web et réseaux sociaux."
+                           data-en="Collections, ready-to-wear, tailoring, suiting. Clean image usable for print, web and social media.">
                             Collections, prêt-à-porter, tailoring, costume. Image propre,
                             utilisable en print, web et réseaux sociaux.
                         </p>
@@ -224,8 +355,14 @@
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-mobile-alt"></i>
-                        <div class="text">Contenu digital</div>
-                        <p>
+                        <div class="text"
+                             data-fr="Contenu digital"
+                             data-en="Digital content">
+                            Contenu digital
+                        </div>
+                        <p
+                           data-fr="Création de contenu pour Instagram, TikTok, e-commerce et campagnes social media avec une direction artistique précise."
+                           data-en="Content creation for Instagram, TikTok, e-commerce and social campaigns with a precise art direction.">
                             Création de contenu pour Instagram, TikTok, e-commerce et campagnes
                             social media avec une direction artistique précise.
                         </p>
@@ -238,11 +375,21 @@
     <!-- SECTION CONTACT -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact</h2>
+            <h2 class="title"
+                data-fr="Contact"
+                data-en="Contact">
+                Contact
+            </h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Booking et agences</div>
-                    <p>
+                    <div class="text"
+                         data-fr="Booking et agences"
+                         data-en="Booking &amp; agencies">
+                        Booking et agences
+                    </div>
+                    <p
+                       data-fr="Pour les agences, directeurs de casting et productions. Merci de préciser le type de projet, les dates, le lieu et les références éventuelles."
+                       data-en="For agencies, casting directors and productions. Please mention the type of project, dates, location and references if any.">
                         Pour les agences, directeurs de casting et productions.  
                         Merci de préciser le type de projet, les dates, le lieu et les
                         références éventuelles.
@@ -251,7 +398,11 @@
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
-                                <div class="head">Email</div>
+                                <div class="head"
+                                     data-fr="Email"
+                                     data-en="Email">
+                                    Email
+                                </div>
                                 <div class="sub-title">
                                     <a href="mailto:guillaumepredhomme@gmail.com">
                                         guillaumepredhomme@gmail.com
@@ -262,7 +413,11 @@
                         <div class="row">
                             <i class="fab fa-instagram"></i>
                             <div class="info">
-                                <div class="head">Instagram</div>
+                                <div class="head"
+                                     data-fr="Instagram"
+                                     data-en="Instagram">
+                                    Instagram
+                                </div>
                                 <div class="sub-title">
                                     <a href="https://instagram.com/gui.prdhm" target="_blank">
                                         @gui.prdhm
@@ -273,25 +428,45 @@
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Basé à</div>
-                                <div class="sub-title">Paris, France</div>
+                                <div class="head"
+                                     data-fr="Basé à"
+                                     data-en="Based in">
+                                    Basé à
+                                </div>
+                                <div class="sub-title"
+                                     data-fr="Paris, France"
+                                     data-en="Paris, France">
+                                    Paris, France
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="column right">
-                    <div class="text">Envoyer un message</div>
+                    <div class="text"
+                         data-fr="Envoyer un message"
+                         data-en="Send a message">
+                        Envoyer un message
+                    </div>
                     <form id="contact-form"
                           action="mailto:guillaumepredhomme@gmail.com"
                           method="POST" enctype="text/plain">
                         <input type="text" name="name" class="field"
-                               placeholder="Votre nom" required>
+                               placeholder="Votre nom" required
+                               data-fr="Votre nom"
+                               data-en="Your name">
                         <input type="email" name="email" class="field"
-                               placeholder="Votre email" required>
+                               placeholder="Votre email" required
+                               data-fr="Votre email"
+                               data-en="Your email">
                         <textarea name="message" class="field"
-                                  placeholder="Votre message" required></textarea>
-                        <input type="submit" value="Envoyer" class="btn">
+                                  placeholder="Votre message" required
+                                  data-fr="Votre message"
+                                  data-en="Your message"></textarea>
+                        <input type="submit" value="Envoyer" class="btn"
+                               data-fr="Envoyer"
+                               data-en="Send">
                     </form>
                 </div>
             </div>
@@ -301,7 +476,11 @@
     <footer class="site-footer">
         <div class="max-width footer-inner">
             <span>© <span id="year"></span> Guillaume Predhomme</span>
-            <span>Portfolio mannequin · usage professionnel</span>
+            <span
+                  data-fr="Portfolio mannequin · usage professionnel"
+                  data-en="Model portfolio · professional use">
+                Portfolio mannequin · usage professionnel
+            </span>
         </div>
     </footer>
 </body>
