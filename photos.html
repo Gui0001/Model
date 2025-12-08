@@ -36,7 +36,7 @@
         <i class="fas fa-angle-up"></i>
     </div>
 
-    <!-- NAVBAR (cohérente avec l’index) -->
+    <!-- NAVBAR (cohérente avec l’index, maintenant traduisible) -->
     <nav class="navbar">
         <div class="max-width nav-inner">
             <div class="logo">
@@ -44,13 +44,57 @@
                 <span class="logo-sub">Predhomme</span>
             </div>
             <ul class="menu">
-                <li><a href="index.html#home" class="menu-btn"><strong>Home</strong></a></li>
-                <li><a href="index.html#about" class="menu-btn"><strong>About</strong></a></li>
-                <li><a href="index.html#digitals" class="menu-btn"><strong>Digitals</strong></a></li>
-                <li><a href="index.html#services" class="menu-btn"><strong>Services</strong></a></li>
-                <li><a href="index.html#contact" class="menu-btn"><strong>Contact</strong></a></li>
-                <li><a href="#photos" class="menu-btn"><strong>Photos</strong></a></li>
+                <li>
+                    <a href="index.html#home" class="menu-btn"
+                       data-fr="Accueil"
+                       data-en="Home">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#about" class="menu-btn"
+                       data-fr="À propos"
+                       data-en="About">
+                        À propos
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#digitals" class="menu-btn"
+                       data-fr="Digitals"
+                       data-en="Digitals">
+                        Digitals
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#services" class="menu-btn"
+                       data-fr="Services"
+                       data-en="Services">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#contact" class="menu-btn"
+                       data-fr="Contact"
+                       data-en="Contact">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="#photos" class="menu-btn"
+                       data-fr="Photos"
+                       data-en="Gallery">
+                        Photos
+                    </a>
+                </li>
             </ul>
+
+            <!-- Switch de langue -->
+            <div class="lang-switch">
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <span class="lang-separator">/</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+
             <div class="menu-btn burger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -61,30 +105,23 @@
         <section class="photos-section" id="photos">
             <div class="max-width">
                 <header class="photos-header">
-                    <h1 class="title">Galerie photos</h1>
-                    <p class="photos-intro">
+                    <h1 class="title"
+                        data-fr="Galerie photos"
+                        data-en="Photo gallery">
+                        Galerie photos
+                    </h1>
+                    <p class="photos-intro"
+                       data-fr="Sélection de photos éditoriales, tests, portraits et séries personnelles. Cette galerie permet d’avoir un aperçu plus large de mon univers visuel et de ma versatilité devant la caméra."
+                       data-en="Selection of editorial images, tests, portraits and personal series. This gallery offers a broader view of my visual universe and my versatility in front of the camera.">
                         Sélection de photos éditoriales, tests, portraits et séries personnelles.
                         Cette galerie permet d’avoir un aperçu plus large de mon univers visuel et de ma versatilité devant la caméra.
                     </p>
                 </header>
 
-                <!--
-                    IMPORTANT :
-                    La grille ci-dessous utilise la classe "gallery photos-gallery".
-                    Tu peux juste remplacer les src="..." par tes nouveaux fichiers.
-
-                    Pour t’y retrouver :
-                    - Série 1 : par exemple shooting récent / mood principal
-                    - Série 2 : autre ambiance (rooftop, studio, noir & blanc, etc.)
-                    - Tu peux réorganiser l’ordre des photos par série.
-                -->
-
+                <!-- GALERIE PHOTOS : tes images, inchangées -->
                 <div class="gallery photos-gallery">
 
-                    <!-- SÉRIE 1 — Ex : Série forte / récente (tu peux adapter) -->
-                    <!-- Plan plutôt serré / portrait mode -->
-
-
+                    <!-- SÉRIE 1 — Ex : Série forte / récente -->
                     <img src="_DSC6941.jpg" alt="Série 1 - Photo 2">
                     <img src="_DSC6930-2.jpg" alt="Série 1 - Photo 2">
                     <img src="_DSC6919.jpg" alt="Série 1 - Photo 2">
@@ -98,57 +135,23 @@
                     <img src="_DSC6751.jpg" alt="Série 1 - Photo 2">
                     <img src="_DSC6753.jpg" alt="Série 1 - Photo 2">
 
-                    <!-- Portrait ou plan américain de la même série -->
-
-
-
+                    <!-- Autres photos / séries (exactement celles que tu avais) -->
                     <img src="photo157.jpg" alt="Série 1 - Photo 3">
                     <img src="Photo07.1.jpg" alt="Série 1 - Photo 4">
-                     <img src="photo17.jpg" alt="Série 5 - Photo 1">
+                    <img src="photo17.jpg" alt="Série 5 - Photo 1">
                     <img src="Photo122.jpg" alt="Série 7 - Photo 3">
 
-
-                    
-
-                    
-
-
-            
-
-
-
-
-
-                    <!-- SÉRIE 2 — Portraits et gros plans -->
-                    <!-- Portrait éditorial / gros plan visage -->
                     <img src="Photo121.jpg" alt="Série 6 - Photo 2">
-                    <!-- Variation du même set (format PNG) -->
-                   
 
-                    <!-- SÉRIE 3 — Looks plus casual / extérieur -->
                     <img src="photo13.jpg" alt="Série 3 - Photo 1">
 
-                    <!-- SÉRIE 4 — Série en PNG (peut-être autre shoot) -->
                     <img src="163.png" alt="Série 4 - Photo 1">
                     <img src="167.png" alt="Série 4 - Photo 3">
                     <img src="168.png" alt="Série 4 - Photo 4">
 
-                    <!-- SÉRIE 5 — Portraits / ambiance plus posée -->
                     <img src="photo12.1.jpg" alt="Série 5 - Photo 3">
 
-                    <!-- SÉRIE 6 — Série type lifestyle / réseaux sociaux -->
-
-
-                    <!-- SÉRIE 7 — Derniers clichés ou favoris -->
-
-
-                    <!--
-                        Tu peux :
-                        - supprimer des images que tu ne veux plus,
-                        - en ajouter d’autres en copiant la structure :
-                          <img src="nom-de-ton-fichier.jpg" alt="Série X - Photo Y">
-                        - réorganiser les séries selon l’importance de chaque shooting.
-                    -->
+                    <!-- Tu peux ensuite continuer à ajouter / retirer des <img> comme tu veux -->
                 </div>
             </div>
         </section>
@@ -157,7 +160,11 @@
     <footer class="site-footer">
         <div class="max-width footer-inner">
             <span>© <span id="year"></span> Guillaume Predhomme</span>
-            <span>Portfolio mannequin · usage professionnel</span>
+            <span
+                data-fr="Portfolio mannequin · usage professionnel"
+                data-en="Model portfolio · professional use">
+                Portfolio mannequin · usage professionnel
+            </span>
         </div>
     </footer>
 </body>
