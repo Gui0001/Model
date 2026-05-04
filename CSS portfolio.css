@@ -347,6 +347,15 @@ section {
   margin-bottom: 0.9rem;
 }
 
+.about .casting-list {
+  grid-template-columns: 1fr;
+  gap: 7px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(215, 182, 118, 0.24);
+  background: rgba(10, 11, 22, 0.72);
+}
+
 /* SECTION DIGITALS */
 
 .digitals {
@@ -725,5 +734,44 @@ textarea.field {
 
   .photos-page .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Bloc détails placé après les digitals : visible pour les pros, discret pour ne pas casser l'impact visuel */
+.digitals-details {
+  margin-top: 24px;
+  padding: 16px 18px;
+  max-width: 760px;
+  border-radius: 18px;
+  border: 1px solid rgba(245, 245, 245, 0.07);
+  background: rgba(10, 11, 22, 0.62);
+}
+
+.digitals-details-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: 0.72;
+  margin-bottom: 10px;
+}
+
+.digitals-details-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px 18px;
+  font-size: 0.86rem;
+  opacity: 0.82;
+}
+
+@media (max-width: 768px) {
+  .digitals-details-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .digitals-details-list {
+    grid-template-columns: 1fr;
   }
 }
